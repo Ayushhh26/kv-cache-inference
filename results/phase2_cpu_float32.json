@@ -1,0 +1,3641 @@
+{
+  "snapshots": [
+    {
+      "sequence_length": 32,
+      "layer_count": 24,
+      "cache_class": "DynamicCache",
+      "layers": [
+        {
+          "layer": 0,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          }
+        },
+        {
+          "layer": 1,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          }
+        },
+        {
+          "layer": 2,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          }
+        },
+        {
+          "layer": 3,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          }
+        },
+        {
+          "layer": 4,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          }
+        },
+        {
+          "layer": 5,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          }
+        },
+        {
+          "layer": 6,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          }
+        },
+        {
+          "layer": 7,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          }
+        },
+        {
+          "layer": 8,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          }
+        },
+        {
+          "layer": 9,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          }
+        },
+        {
+          "layer": 10,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          }
+        },
+        {
+          "layer": 11,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          }
+        },
+        {
+          "layer": 12,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          }
+        },
+        {
+          "layer": 13,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          }
+        },
+        {
+          "layer": 14,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          }
+        },
+        {
+          "layer": 15,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          }
+        },
+        {
+          "layer": 16,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          }
+        },
+        {
+          "layer": 17,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          }
+        },
+        {
+          "layer": 18,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          }
+        },
+        {
+          "layer": 19,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          }
+        },
+        {
+          "layer": 20,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          }
+        },
+        {
+          "layer": 21,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          }
+        },
+        {
+          "layer": 22,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          }
+        },
+        {
+          "layer": 23,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4096,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16384
+          }
+        }
+      ],
+      "kv_tensor_bytes": 786432,
+      "expected_kv_tensor_bytes": 786432,
+      "observed_bytes_per_token": 24576,
+      "matches_expected": true,
+      "stage": "prefill",
+      "decode_step": 0,
+      "input_tokens_this_forward": 32,
+      "generated_tokens_fed_back": 0,
+      "growth_bytes": null
+    },
+    {
+      "sequence_length": 33,
+      "layer_count": 24,
+      "cache_class": "DynamicCache",
+      "layers": [
+        {
+          "layer": 0,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          }
+        },
+        {
+          "layer": 1,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          }
+        },
+        {
+          "layer": 2,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          }
+        },
+        {
+          "layer": 3,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          }
+        },
+        {
+          "layer": 4,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          }
+        },
+        {
+          "layer": 5,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          }
+        },
+        {
+          "layer": 6,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          }
+        },
+        {
+          "layer": 7,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          }
+        },
+        {
+          "layer": 8,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          }
+        },
+        {
+          "layer": 9,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          }
+        },
+        {
+          "layer": 10,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          }
+        },
+        {
+          "layer": 11,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          }
+        },
+        {
+          "layer": 12,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          }
+        },
+        {
+          "layer": 13,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          }
+        },
+        {
+          "layer": 14,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          }
+        },
+        {
+          "layer": 15,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          }
+        },
+        {
+          "layer": 16,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          }
+        },
+        {
+          "layer": 17,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          }
+        },
+        {
+          "layer": 18,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          }
+        },
+        {
+          "layer": 19,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          }
+        },
+        {
+          "layer": 20,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          }
+        },
+        {
+          "layer": 21,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          }
+        },
+        {
+          "layer": 22,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          }
+        },
+        {
+          "layer": 23,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4224,
+            "element_size_bytes": 4,
+            "tensor_bytes": 16896
+          }
+        }
+      ],
+      "kv_tensor_bytes": 811008,
+      "expected_kv_tensor_bytes": 811008,
+      "observed_bytes_per_token": 24576,
+      "matches_expected": true,
+      "stage": "decode",
+      "decode_step": 1,
+      "input_tokens_this_forward": 1,
+      "generated_tokens_fed_back": 1,
+      "growth_bytes": 24576
+    },
+    {
+      "sequence_length": 34,
+      "layer_count": 24,
+      "cache_class": "DynamicCache",
+      "layers": [
+        {
+          "layer": 0,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          }
+        },
+        {
+          "layer": 1,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          }
+        },
+        {
+          "layer": 2,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          }
+        },
+        {
+          "layer": 3,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          }
+        },
+        {
+          "layer": 4,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          }
+        },
+        {
+          "layer": 5,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          }
+        },
+        {
+          "layer": 6,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          }
+        },
+        {
+          "layer": 7,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          }
+        },
+        {
+          "layer": 8,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          }
+        },
+        {
+          "layer": 9,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          }
+        },
+        {
+          "layer": 10,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          }
+        },
+        {
+          "layer": 11,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          }
+        },
+        {
+          "layer": 12,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          }
+        },
+        {
+          "layer": 13,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          }
+        },
+        {
+          "layer": 14,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          }
+        },
+        {
+          "layer": 15,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          }
+        },
+        {
+          "layer": 16,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          }
+        },
+        {
+          "layer": 17,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          }
+        },
+        {
+          "layer": 18,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          }
+        },
+        {
+          "layer": 19,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          }
+        },
+        {
+          "layer": 20,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          }
+        },
+        {
+          "layer": 21,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          }
+        },
+        {
+          "layer": 22,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          }
+        },
+        {
+          "layer": 23,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4352,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17408
+          }
+        }
+      ],
+      "kv_tensor_bytes": 835584,
+      "expected_kv_tensor_bytes": 835584,
+      "observed_bytes_per_token": 24576,
+      "matches_expected": true,
+      "stage": "decode",
+      "decode_step": 2,
+      "input_tokens_this_forward": 1,
+      "generated_tokens_fed_back": 2,
+      "growth_bytes": 24576
+    },
+    {
+      "sequence_length": 35,
+      "layer_count": 24,
+      "cache_class": "DynamicCache",
+      "layers": [
+        {
+          "layer": 0,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          }
+        },
+        {
+          "layer": 1,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          }
+        },
+        {
+          "layer": 2,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          }
+        },
+        {
+          "layer": 3,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          }
+        },
+        {
+          "layer": 4,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          }
+        },
+        {
+          "layer": 5,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          }
+        },
+        {
+          "layer": 6,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          }
+        },
+        {
+          "layer": 7,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          }
+        },
+        {
+          "layer": 8,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          }
+        },
+        {
+          "layer": 9,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          }
+        },
+        {
+          "layer": 10,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          }
+        },
+        {
+          "layer": 11,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          }
+        },
+        {
+          "layer": 12,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          }
+        },
+        {
+          "layer": 13,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          }
+        },
+        {
+          "layer": 14,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          }
+        },
+        {
+          "layer": 15,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          }
+        },
+        {
+          "layer": 16,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          }
+        },
+        {
+          "layer": 17,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          }
+        },
+        {
+          "layer": 18,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          }
+        },
+        {
+          "layer": 19,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          }
+        },
+        {
+          "layer": 20,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          }
+        },
+        {
+          "layer": 21,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          }
+        },
+        {
+          "layer": 22,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          }
+        },
+        {
+          "layer": 23,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4480,
+            "element_size_bytes": 4,
+            "tensor_bytes": 17920
+          }
+        }
+      ],
+      "kv_tensor_bytes": 860160,
+      "expected_kv_tensor_bytes": 860160,
+      "observed_bytes_per_token": 24576,
+      "matches_expected": true,
+      "stage": "decode",
+      "decode_step": 3,
+      "input_tokens_this_forward": 1,
+      "generated_tokens_fed_back": 3,
+      "growth_bytes": 24576
+    },
+    {
+      "sequence_length": 36,
+      "layer_count": 24,
+      "cache_class": "DynamicCache",
+      "layers": [
+        {
+          "layer": 0,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          }
+        },
+        {
+          "layer": 1,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          }
+        },
+        {
+          "layer": 2,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          }
+        },
+        {
+          "layer": 3,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          }
+        },
+        {
+          "layer": 4,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          }
+        },
+        {
+          "layer": 5,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          }
+        },
+        {
+          "layer": 6,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          }
+        },
+        {
+          "layer": 7,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          }
+        },
+        {
+          "layer": 8,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          }
+        },
+        {
+          "layer": 9,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          }
+        },
+        {
+          "layer": 10,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          }
+        },
+        {
+          "layer": 11,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          }
+        },
+        {
+          "layer": 12,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          }
+        },
+        {
+          "layer": 13,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          }
+        },
+        {
+          "layer": 14,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          }
+        },
+        {
+          "layer": 15,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          }
+        },
+        {
+          "layer": 16,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          }
+        },
+        {
+          "layer": 17,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          }
+        },
+        {
+          "layer": 18,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          }
+        },
+        {
+          "layer": 19,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          }
+        },
+        {
+          "layer": 20,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          }
+        },
+        {
+          "layer": 21,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          }
+        },
+        {
+          "layer": 22,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          }
+        },
+        {
+          "layer": 23,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float32",
+            "device": "cpu",
+            "numel": 4608,
+            "element_size_bytes": 4,
+            "tensor_bytes": 18432
+          }
+        }
+      ],
+      "kv_tensor_bytes": 884736,
+      "expected_kv_tensor_bytes": 884736,
+      "observed_bytes_per_token": 24576,
+      "matches_expected": true,
+      "stage": "decode",
+      "decode_step": 4,
+      "input_tokens_this_forward": 1,
+      "generated_tokens_fed_back": 4,
+      "growth_bytes": 24576
+    }
+  ],
+  "generated_token_ids": [
+    32,
+    42578,
+    4128,
+    1614,
+    374
+  ],
+  "stop_reason": "decode_step_limit",
+  "phase": 2,
+  "timestamp_utc": "2026-09-21T04:58:30.226365+00:00",
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "device": "cpu",
+  "dtype": "torch.float32",
+  "seed": 0,
+  "attention_implementation": "sdpa",
+  "python": "3.13.8",
+  "torch": "2.8.0",
+  "transformers": "4.57.6",
+  "platform": "macOS-15.6.1-arm64-arm-64bit-Mach-O",
+  "system_memory_bytes": 19327352832,
+  "chip": null,
+  "mps_fallback_env": null,
+  "git_commit": "ad1c2750933afafc85e37ae968c099130412b84d",
+  "git_status": "?? scripts/inspect_kv_cache.py\n?? tests/test_inspect_kv_cache.py",
+  "source_sha256": {
+    "inspect_kv_cache.py": "1f055b0b8508bbbe5a904fe9f49f1ca1517db3876589470e2da75422466c8ca7",
+    "run_basic_generation.py": "5bf84d50ffc60fe8539dd28bfba4bdf7f64aec40d96564ef9f16e001cf9dbbd0"
+  },
+  "prompt": "Explain what a transformer language model does in three short sentences.",
+  "prompt_token_ids": [
+    151644,
+    8948,
+    198,
+    2610,
+    525,
+    264,
+    10950,
+    17847,
+    13,
+    151645,
+    198,
+    151644,
+    872,
+    198,
+    840,
+    20772,
+    1128,
+    264,
+    42578,
+    4128,
+    1614,
+    1558,
+    304,
+    2326,
+    2805,
+    22870,
+    13,
+    151645,
+    198,
+    151644,
+    77091,
+    198
+  ],
+  "requested_decode_steps": 4,
+  "generated_text": "A transformer language model is",
+  "architecture": {
+    "layers": 24,
+    "query_heads": 14,
+    "kv_heads": 2,
+    "head_dim": 64,
+    "element_size_bytes": 4
+  },
+  "memory_formula": "2 * layers * kv_heads * head_dim * element_size_bytes (per token per sequence)",
+  "expected_bytes_per_token": 24576,
+  "memory_scope": "Sum of live K/V tensor numel * element_size; excludes model weights, temporary attention tensors, allocator reserve, metadata and total process/unified memory. Not a peak-memory measurement.",
+  "decode_semantics": "Prefill predicts token 1. Each decode call caches the previous prediction and predicts the next. The final emitted token is not yet cached."
+}

@@ -1,8 +1,8 @@
 # KV-cache inference experiment
 
-Phase 0–1 implementation: run Qwen2.5-0.5B-Instruct with standard Hugging Face
-Transformers generation on Apple MPS or CPU. Custom cache implementations,
-KV-state inspection, and comparative benchmarks are future phases.
+Run Qwen2.5-0.5B-Instruct on Apple MPS or CPU and inspect its KV-cache tensors
+during generation. Custom cache implementations and comparative benchmarks
+are planned.
 
 ## Setup
 
@@ -69,6 +69,21 @@ The synchronous streamer copies tokens to CPU and introduces timing overhead.
 These are instrumented Phase 1 smoke measurements, not a formal throughput
 benchmark. Three runs do not justify a p95 claim. No cache-memory savings are
 measured or claimed here.
+
+## Inspect the KV cache
+
+After downloading the model with the generation script:
+
+```sh
+python scripts/inspect_kv_cache.py --device mps
+# Or run on CPU:
+python scripts/inspect_kv_cache.py --device cpu
+```
+
+The inspection runs offline and prints each layer's K/V shape, dtype, and device
+after prefill and four decode steps. It checks tensor bytes against the model
+configuration and saves the observations as JSON in `results/`.
+See [KV-cache findings](docs/phase2_findings.md) for the observed layout and calculations.
 
 ## Project documentation
 

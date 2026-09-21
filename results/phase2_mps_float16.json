@@ -1,0 +1,3641 @@
+{
+  "snapshots": [
+    {
+      "sequence_length": 32,
+      "layer_count": 24,
+      "cache_class": "DynamicCache",
+      "layers": [
+        {
+          "layer": 0,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          }
+        },
+        {
+          "layer": 1,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          }
+        },
+        {
+          "layer": 2,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          }
+        },
+        {
+          "layer": 3,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          }
+        },
+        {
+          "layer": 4,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          }
+        },
+        {
+          "layer": 5,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          }
+        },
+        {
+          "layer": 6,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          }
+        },
+        {
+          "layer": 7,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          }
+        },
+        {
+          "layer": 8,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          }
+        },
+        {
+          "layer": 9,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          }
+        },
+        {
+          "layer": 10,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          }
+        },
+        {
+          "layer": 11,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          }
+        },
+        {
+          "layer": 12,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          }
+        },
+        {
+          "layer": 13,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          }
+        },
+        {
+          "layer": 14,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          }
+        },
+        {
+          "layer": 15,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          }
+        },
+        {
+          "layer": 16,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          }
+        },
+        {
+          "layer": 17,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          }
+        },
+        {
+          "layer": 18,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          }
+        },
+        {
+          "layer": 19,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          }
+        },
+        {
+          "layer": 20,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          }
+        },
+        {
+          "layer": 21,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          }
+        },
+        {
+          "layer": 22,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          }
+        },
+        {
+          "layer": 23,
+          "key": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              32,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4096,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8192
+          }
+        }
+      ],
+      "kv_tensor_bytes": 393216,
+      "expected_kv_tensor_bytes": 393216,
+      "observed_bytes_per_token": 12288,
+      "matches_expected": true,
+      "stage": "prefill",
+      "decode_step": 0,
+      "input_tokens_this_forward": 32,
+      "generated_tokens_fed_back": 0,
+      "growth_bytes": null
+    },
+    {
+      "sequence_length": 33,
+      "layer_count": 24,
+      "cache_class": "DynamicCache",
+      "layers": [
+        {
+          "layer": 0,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          }
+        },
+        {
+          "layer": 1,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          }
+        },
+        {
+          "layer": 2,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          }
+        },
+        {
+          "layer": 3,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          }
+        },
+        {
+          "layer": 4,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          }
+        },
+        {
+          "layer": 5,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          }
+        },
+        {
+          "layer": 6,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          }
+        },
+        {
+          "layer": 7,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          }
+        },
+        {
+          "layer": 8,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          }
+        },
+        {
+          "layer": 9,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          }
+        },
+        {
+          "layer": 10,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          }
+        },
+        {
+          "layer": 11,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          }
+        },
+        {
+          "layer": 12,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          }
+        },
+        {
+          "layer": 13,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          }
+        },
+        {
+          "layer": 14,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          }
+        },
+        {
+          "layer": 15,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          }
+        },
+        {
+          "layer": 16,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          }
+        },
+        {
+          "layer": 17,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          }
+        },
+        {
+          "layer": 18,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          }
+        },
+        {
+          "layer": 19,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          }
+        },
+        {
+          "layer": 20,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          }
+        },
+        {
+          "layer": 21,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          }
+        },
+        {
+          "layer": 22,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          }
+        },
+        {
+          "layer": 23,
+          "key": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              33,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4224,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8448
+          }
+        }
+      ],
+      "kv_tensor_bytes": 405504,
+      "expected_kv_tensor_bytes": 405504,
+      "observed_bytes_per_token": 12288,
+      "matches_expected": true,
+      "stage": "decode",
+      "decode_step": 1,
+      "input_tokens_this_forward": 1,
+      "generated_tokens_fed_back": 1,
+      "growth_bytes": 12288
+    },
+    {
+      "sequence_length": 34,
+      "layer_count": 24,
+      "cache_class": "DynamicCache",
+      "layers": [
+        {
+          "layer": 0,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          }
+        },
+        {
+          "layer": 1,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          }
+        },
+        {
+          "layer": 2,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          }
+        },
+        {
+          "layer": 3,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          }
+        },
+        {
+          "layer": 4,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          }
+        },
+        {
+          "layer": 5,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          }
+        },
+        {
+          "layer": 6,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          }
+        },
+        {
+          "layer": 7,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          }
+        },
+        {
+          "layer": 8,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          }
+        },
+        {
+          "layer": 9,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          }
+        },
+        {
+          "layer": 10,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          }
+        },
+        {
+          "layer": 11,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          }
+        },
+        {
+          "layer": 12,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          }
+        },
+        {
+          "layer": 13,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          }
+        },
+        {
+          "layer": 14,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          }
+        },
+        {
+          "layer": 15,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          }
+        },
+        {
+          "layer": 16,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          }
+        },
+        {
+          "layer": 17,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          }
+        },
+        {
+          "layer": 18,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          }
+        },
+        {
+          "layer": 19,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          }
+        },
+        {
+          "layer": 20,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          }
+        },
+        {
+          "layer": 21,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          }
+        },
+        {
+          "layer": 22,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          }
+        },
+        {
+          "layer": 23,
+          "key": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              34,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4352,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8704
+          }
+        }
+      ],
+      "kv_tensor_bytes": 417792,
+      "expected_kv_tensor_bytes": 417792,
+      "observed_bytes_per_token": 12288,
+      "matches_expected": true,
+      "stage": "decode",
+      "decode_step": 2,
+      "input_tokens_this_forward": 1,
+      "generated_tokens_fed_back": 2,
+      "growth_bytes": 12288
+    },
+    {
+      "sequence_length": 35,
+      "layer_count": 24,
+      "cache_class": "DynamicCache",
+      "layers": [
+        {
+          "layer": 0,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          }
+        },
+        {
+          "layer": 1,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          }
+        },
+        {
+          "layer": 2,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          }
+        },
+        {
+          "layer": 3,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          }
+        },
+        {
+          "layer": 4,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          }
+        },
+        {
+          "layer": 5,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          }
+        },
+        {
+          "layer": 6,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          }
+        },
+        {
+          "layer": 7,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          }
+        },
+        {
+          "layer": 8,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          }
+        },
+        {
+          "layer": 9,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          }
+        },
+        {
+          "layer": 10,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          }
+        },
+        {
+          "layer": 11,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          }
+        },
+        {
+          "layer": 12,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          }
+        },
+        {
+          "layer": 13,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          }
+        },
+        {
+          "layer": 14,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          }
+        },
+        {
+          "layer": 15,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          }
+        },
+        {
+          "layer": 16,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          }
+        },
+        {
+          "layer": 17,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          }
+        },
+        {
+          "layer": 18,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          }
+        },
+        {
+          "layer": 19,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          }
+        },
+        {
+          "layer": 20,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          }
+        },
+        {
+          "layer": 21,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          }
+        },
+        {
+          "layer": 22,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          }
+        },
+        {
+          "layer": 23,
+          "key": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              35,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4480,
+            "element_size_bytes": 2,
+            "tensor_bytes": 8960
+          }
+        }
+      ],
+      "kv_tensor_bytes": 430080,
+      "expected_kv_tensor_bytes": 430080,
+      "observed_bytes_per_token": 12288,
+      "matches_expected": true,
+      "stage": "decode",
+      "decode_step": 3,
+      "input_tokens_this_forward": 1,
+      "generated_tokens_fed_back": 3,
+      "growth_bytes": 12288
+    },
+    {
+      "sequence_length": 36,
+      "layer_count": 24,
+      "cache_class": "DynamicCache",
+      "layers": [
+        {
+          "layer": 0,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          }
+        },
+        {
+          "layer": 1,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          }
+        },
+        {
+          "layer": 2,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          }
+        },
+        {
+          "layer": 3,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          }
+        },
+        {
+          "layer": 4,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          }
+        },
+        {
+          "layer": 5,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          }
+        },
+        {
+          "layer": 6,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          }
+        },
+        {
+          "layer": 7,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          }
+        },
+        {
+          "layer": 8,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          }
+        },
+        {
+          "layer": 9,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          }
+        },
+        {
+          "layer": 10,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          }
+        },
+        {
+          "layer": 11,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          }
+        },
+        {
+          "layer": 12,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          }
+        },
+        {
+          "layer": 13,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          }
+        },
+        {
+          "layer": 14,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          }
+        },
+        {
+          "layer": 15,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          }
+        },
+        {
+          "layer": 16,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          }
+        },
+        {
+          "layer": 17,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          }
+        },
+        {
+          "layer": 18,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          }
+        },
+        {
+          "layer": 19,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          }
+        },
+        {
+          "layer": 20,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          }
+        },
+        {
+          "layer": 21,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          }
+        },
+        {
+          "layer": 22,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          }
+        },
+        {
+          "layer": 23,
+          "key": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          },
+          "value": {
+            "shape": [
+              1,
+              2,
+              36,
+              64
+            ],
+            "dtype": "torch.float16",
+            "device": "mps:0",
+            "numel": 4608,
+            "element_size_bytes": 2,
+            "tensor_bytes": 9216
+          }
+        }
+      ],
+      "kv_tensor_bytes": 442368,
+      "expected_kv_tensor_bytes": 442368,
+      "observed_bytes_per_token": 12288,
+      "matches_expected": true,
+      "stage": "decode",
+      "decode_step": 4,
+      "input_tokens_this_forward": 1,
+      "generated_tokens_fed_back": 4,
+      "growth_bytes": 12288
+    }
+  ],
+  "generated_token_ids": [
+    32,
+    42578,
+    4128,
+    1614,
+    374
+  ],
+  "stop_reason": "decode_step_limit",
+  "phase": 2,
+  "timestamp_utc": "2026-09-21T04:58:39.809341+00:00",
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "device": "mps:0",
+  "dtype": "torch.float16",
+  "seed": 0,
+  "attention_implementation": "sdpa",
+  "python": "3.13.8",
+  "torch": "2.8.0",
+  "transformers": "4.57.6",
+  "platform": "macOS-15.6.1-arm64-arm-64bit-Mach-O",
+  "system_memory_bytes": 19327352832,
+  "chip": "Apple M3 Pro",
+  "mps_fallback_env": null,
+  "git_commit": "ad1c2750933afafc85e37ae968c099130412b84d",
+  "git_status": "?? results/phase2_cpu_float32.json\n?? scripts/inspect_kv_cache.py\n?? tests/test_inspect_kv_cache.py",
+  "source_sha256": {
+    "inspect_kv_cache.py": "1f055b0b8508bbbe5a904fe9f49f1ca1517db3876589470e2da75422466c8ca7",
+    "run_basic_generation.py": "5bf84d50ffc60fe8539dd28bfba4bdf7f64aec40d96564ef9f16e001cf9dbbd0"
+  },
+  "prompt": "Explain what a transformer language model does in three short sentences.",
+  "prompt_token_ids": [
+    151644,
+    8948,
+    198,
+    2610,
+    525,
+    264,
+    10950,
+    17847,
+    13,
+    151645,
+    198,
+    151644,
+    872,
+    198,
+    840,
+    20772,
+    1128,
+    264,
+    42578,
+    4128,
+    1614,
+    1558,
+    304,
+    2326,
+    2805,
+    22870,
+    13,
+    151645,
+    198,
+    151644,
+    77091,
+    198
+  ],
+  "requested_decode_steps": 4,
+  "generated_text": "A transformer language model is",
+  "architecture": {
+    "layers": 24,
+    "query_heads": 14,
+    "kv_heads": 2,
+    "head_dim": 64,
+    "element_size_bytes": 2
+  },
+  "memory_formula": "2 * layers * kv_heads * head_dim * element_size_bytes (per token per sequence)",
+  "expected_bytes_per_token": 12288,
+  "memory_scope": "Sum of live K/V tensor numel * element_size; excludes model weights, temporary attention tensors, allocator reserve, metadata and total process/unified memory. Not a peak-memory measurement.",
+  "decode_semantics": "Prefill predicts token 1. Each decode call caches the previous prediction and predicts the next. The final emitted token is not yet cached."
+}

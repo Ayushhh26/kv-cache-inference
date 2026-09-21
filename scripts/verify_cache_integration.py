@@ -30,6 +30,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--device', choices=['cpu', 'mps'], default='cpu')
     parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--attention', choices=['sdpa', 'eager'], default='sdpa')
     args = parser.parse_args()
     if args.output.exists():
         parser.error('Output already exists')
@@ -39,7 +40,7 @@ def main():
     local = snapshot_download(MODEL, revision=REVISION, local_files_only=True)
     tokenizer = AutoTokenizer.from_pretrained(local, local_files_only=True)
     model = AutoModelForCausalLM.from_pretrained(local, dtype=dtype, local_files_only=True,
-                                               attn_implementation='sdpa').to(device).eval()
+                                               attn_implementation=args.attention).to(device).eval()
     cases = []
     atol, rtol = (0.03, 0.01) if dtype == torch.float16 else (1e-4, 1e-4)
     for prompt in ['Explain what a transformer language model does in three short sentences.',
@@ -53,8 +54,8 @@ def main():
                 max_new_tokens=12, do_sample=False, use_cache=True,
                 eos_token_id=model.generation_config.eos_token_id, pad_token_id=tokenizer.pad_token_id))
         stock_generate_match = generated[0, inputs.input_ids.shape[1]:].tolist() == stock_tokens
-        for strategy in ['contiguous', 'block']:
-            for block_size in ([16] if strategy == 'contiguous' else [8, 16]):
+        for strategy in ['contiguous', 'dynamic', 'block']:
+            for block_size in ([8, 16] if strategy == 'block' else [16]):
                 cache = ModelCacheAdapter(strategy, model.config, capacity=128,
                                           block_size=block_size, dtype=dtype, device=device)
                 try:
@@ -77,7 +78,7 @@ def main():
     report = dict(model=MODEL, revision=REVISION, device=str(model.device), dtype=str(model.dtype),
                   timestamp_utc=datetime.now(timezone.utc).isoformat(), python=platform.python_version(),
                   platform=platform.platform(), torch=torch.__version__, transformers=transformers.__version__,
-                  attention='sdpa', seed=0, max_new_tokens=12, atol=atol, rtol=rtol,
+                  attention=args.attention, seed=0, max_new_tokens=12, atol=atol, rtol=rtol,
                   mps_fallback_env=os.environ.get('PYTORCH_ENABLE_MPS_FALLBACK'),
                   git_commit=command_output('git', 'rev-parse', 'HEAD'), git_status=command_output('git', 'status', '--short'),
                   source_sha256={str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest() for p in sources},

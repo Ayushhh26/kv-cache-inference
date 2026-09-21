@@ -11,19 +11,22 @@ def config():
         num_hidden_layers=2, num_attention_heads=4, num_key_value_heads=2)
 
 
-@pytest.mark.parametrize('strategy', ['contiguous', 'block'])
+@pytest.mark.parametrize('strategy', ['contiguous', 'dynamic', 'block'])
 def test_budget_exhaustion_release_and_promises(strategy):
     owner = KVCapacityBudget(strategy, config(), 4096, 8, block_size=4)
     first = owner.admit('first', 3)
     second = owner.admit('second', 3)
-    count = 2 if strategy == 'contiguous' else 4
+    count = {'contiguous': 2, 'dynamic': 5, 'block': 4}[strategy]
     for index in range(2, count):
         owner.admit(str(index), 3)
     before = owner.metrics()
     with pytest.raises(MemoryError):
         owner.admit('overflow', 3)
     assert owner.metrics() == before
-    assert before['committed_capacity_bytes'] == 4096
+    assert before['committed_capacity_bytes'] == (3840 if strategy == 'dynamic' else 4096)
+    if strategy == 'dynamic':
+        assert before['reserved_tensor_bytes'] == 0
+        assert before['promised_unassigned_bytes'] == 3840
     owner.release('first')
     owner.admit('replacement', 3)
     assert all(not layer.storage.closed for layer in second.layers)
@@ -34,7 +37,7 @@ def test_budget_exhaustion_release_and_promises(strategy):
         owner.admit('closed', 1)
 
 
-@pytest.mark.parametrize('strategy', ['contiguous', 'block'])
+@pytest.mark.parametrize('strategy', ['contiguous', 'dynamic', 'block'])
 def test_interleaved_requests_match_stock_after_free_and_reuse(strategy):
     torch.manual_seed(0)
     model = Qwen2ForCausalLM(config()).eval()
@@ -64,8 +67,9 @@ def test_interleaved_requests_match_stock_after_free_and_reuse(strategy):
         owner.close()
 
 
-def test_horizon_prevents_unbudgeted_growth_and_rejected_ids():
-    owner = KVCapacityBudget('block', config(), 2048, 8, block_size=4)
+@pytest.mark.parametrize('strategy', ['block', 'dynamic'])
+def test_horizon_prevents_unbudgeted_growth_and_rejected_ids(strategy):
+    owner = KVCapacityBudget(strategy, config(), 2048, 8, block_size=4)
     cache = owner.admit('a', 3)
     with pytest.raises(ValueError):
         owner.admit('a', 1)
@@ -89,7 +93,7 @@ def test_nondivisible_budget_does_not_round_up():
         KVCapacityBudget('block', config(), 100, 8, block_size=4)
 
 
-@pytest.mark.parametrize('strategy', ['contiguous', 'block'])
+@pytest.mark.parametrize('strategy', ['contiguous', 'dynamic', 'block'])
 def test_trial_stops_on_failure_and_checks_churn(monkeypatch, strategy):
     from scripts import run_capacity_benchmark as benchmark
     monkeypatch.setattr(benchmark, 'SEQUENCE_CAPACITY', 8)

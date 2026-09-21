@@ -20,7 +20,7 @@ class KVCapacityBudget:
         for value in (budget_bytes, sequence_capacity, block_size):
             if type(value) is not int or value < 1:
                 raise ValueError('Budget, sequence capacity and block size must be positive integers')
-        if strategy not in ('contiguous', 'block'):
+        if strategy not in ('contiguous', 'dynamic', 'block'):
             raise ValueError('Unknown strategy')
         if config.model_type != 'qwen2' or getattr(config, 'use_sliding_window', False):
             raise ValueError('Only non-sliding Qwen2 is supported')
@@ -55,6 +55,8 @@ class KVCapacityBudget:
             raise ValueError('Cached-token horizon outside sequence capacity')
         slots = self.sequence_capacity if self.strategy == 'contiguous' else (
             (cached_token_horizon + self.block_size - 1) // self.block_size * self.block_size)
+        if self.strategy == 'dynamic':
+            slots = cached_token_horizon
         return slots * self.bytes_per_token
 
     def admit(self, request_id, cached_token_horizon):

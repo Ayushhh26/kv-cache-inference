@@ -14,6 +14,8 @@ def summarize_trial(trial, bytes_per_token, sequence_capacity):
         raise ValueError('Invalid admission count')
     size = trial['block_size']
     def cost(length):
+        if trial['strategy'] == 'dynamic':
+            return (length + 4) * bytes_per_token
         slots = sequence_capacity if size is None else ((length + 4 + size - 1) // size) * size
         return slots * bytes_per_token
     order = trial['workload_order']
@@ -45,6 +47,12 @@ def summarize_trial(trial, bytes_per_token, sequence_capacity):
         wasted_assigned_bytes=final['wasted_assigned_bytes'],
         assigned_utilization_percent=100 * final['used_bytes'] / final['assigned_bytes'],
         maximum_logit_error=max(errors),
+        retained_requests_dynamic_relocation_copy_bytes=sum(a.get('dynamic_relocation_copy_bytes', 0) for a in adapters),
+        retained_requests_dynamic_allocation_count=sum(a.get('dynamic_allocation_count', 0) for a in adapters),
+        retained_requests_dynamic_reallocation_count=sum(a.get('dynamic_reallocation_count', 0) for a in adapters),
+        retained_requests_dynamic_growth_seconds=sum(a.get('dynamic_growth_seconds', 0) for a in adapters),
+        largest_layer_dynamic_growth_live_bytes=max(a.get('dynamic_largest_layer_growth_live_bytes', 0) for a in adapters),
+        largest_layer_dynamic_growth_extra_bytes=max(a.get('dynamic_largest_layer_growth_extra_bytes', 0) for a in adapters),
         retained_requests_gather_copy_bytes=sum(a['gather_copy_bytes_total'] for a in adapters),
         largest_single_layer_gather_output_bytes=max(a['largest_gather_output_bytes'] for a in adapters),
         retained_requests_gather_seconds=sum(a['gather_seconds_total'] for a in adapters))
@@ -53,22 +61,31 @@ def summarize_trial(trial, bytes_per_token, sequence_capacity):
 def summarize(report):
     if report['status'] != 'complete':
         raise ValueError('Report must be complete')
+    variants = [('contiguous', None), ('block', 8), ('block', 16), ('block', 32)]
+    if 'dynamic' in report.get('strategies', []):
+        variants.append(('dynamic', None))
     expected = {(slots, order, strategy, size) for slots in (2, 4)
         for order in ('ascending', 'descending')
-        for strategy, size in [('contiguous', None), ('block', 8), ('block', 16), ('block', 32)]}
+        for strategy, size in variants}
     actual = [(t['baseline_reservations'], t['order_name'], t['strategy'], t['block_size'])
               for t in report['trials']]
-    if len(actual) != 16 or set(actual) != expected:
+    if len(actual) != len(expected) or set(actual) != expected:
         raise ValueError('Incomplete capacity matrix')
     rows = []
     for trial in report['trials']:
         row = summarize_trial(trial, report['bytes_per_token'], report['sequence_capacity'])
         row['order'] = trial['order_name']
         row['capacity_ratio'] = trial['admitted_count'] / trial['baseline_reservations']
+        dynamic = [t for t in report['trials'] if t['strategy'] == 'dynamic'
+                   and t['budget_bytes'] == trial['budget_bytes'] and t['order_name'] == trial['order_name']]
+        if dynamic:
+            row['capacity_ratio_vs_dynamic'] = trial['admitted_count'] / dynamic[0]['admitted_count']
         rows.append(row)
     return dict(device=report['device'], dtype=report['dtype'], attention=report['attention'],
         trials=rows, notes='Persistent KV budget only; sequential forwards with simultaneous resident states. '
-        'Gather totals cover final retained requests including replacement, excluding the released original request. '
+        'Copy totals cover final retained requests including replacement, excluding the released original request. '
+        'Dynamic relocation copies old KV on growth; append copies and block gather copies are separate. '
+        'Dynamic old-plus-new layer payload is transient and excluded from the persistent budget. '
         'Gather timing is instrumented diagnostic time, not a performance benchmark. Temporary output maximum '
         'is a single-layer tensor-payload size, not measured peak process memory.')
 

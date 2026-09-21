@@ -8,6 +8,7 @@ from transformers.cache_utils import Cache, CacheLayerMixin
 from .block_allocator import BlockAllocator
 from .block_cache import BlockKVCache
 from .contiguous_cache import ContiguousKVCache
+from .dynamic_contiguous_cache import DynamicContiguousKVCache
 
 
 def synchronize(device):
@@ -31,6 +32,8 @@ class StorageLayer(CacheLayerMixin):
                      dtype=dtype, device=device)
         if strategy == 'contiguous':
             self.storage = ContiguousKVCache(max_tokens=capacity, **shape)
+        elif strategy == 'dynamic':
+            self.storage = DynamicContiguousKVCache(max_tokens=capacity, **shape)
         elif strategy == 'block':
             self.pool = shared_pool if shared_pool is not None else BlockAllocator(
                 num_blocks=(capacity + block_size - 1) // block_size, block_size=block_size, **shape)
@@ -138,6 +141,13 @@ class ModelCacheAdapter(Cache):
             gather_seconds_total=sum(r['gather_seconds'] for r in records),
             append_copy_bytes_total=sum(r['append_copy_bytes'] for r in records),
             append_seconds_total=sum(r['append_seconds'] for r in records),
+            dynamic_allocation_count=sum(m.get('allocation_count', 0) for m in metrics),
+            dynamic_reallocation_count=sum(m.get('reallocation_count', 0) for m in metrics),
+            dynamic_relocation_copy_bytes=sum(m.get('relocation_copy_bytes', 0) for m in metrics),
+            dynamic_growth_allocated_bytes_total=sum(m.get('growth_allocated_bytes_total', 0) for m in metrics),
+            dynamic_largest_layer_growth_live_bytes=max((m.get('largest_growth_live_bytes', 0) for m in metrics), default=0),
+            dynamic_largest_layer_growth_extra_bytes=max((m.get('largest_growth_extra_bytes', 0) for m in metrics), default=0),
+            dynamic_growth_seconds=sum(m.get('growth_seconds', 0) for m in metrics),
             layer_updates=records,
         )
 

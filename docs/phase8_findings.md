@@ -1,5 +1,10 @@
 # Shared-budget resident KV capacity
 
+This records the original fixed-versus-block experiment. The subsequent
+[dynamic contiguous baseline extension](dynamic_baseline_findings.md) adds a
+stronger baseline; use it when interpreting capacity advantages beyond fixed
+reservation. Historical raw results below are preserved unchanged.
+
 Phase 8 compares simultaneously resident real Qwen KV states under the same
 persistent KV byte budget. Model forwards are sequential, not batched or parallel.
 These results describe resident capacity, not serving throughput or total system

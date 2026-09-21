@@ -1,8 +1,8 @@
 # KV-cache inference experiment
 
 Run Qwen2.5-0.5B-Instruct on Apple MPS or CPU and inspect its KV-cache tensors
-during generation. A fixed-capacity contiguous cache is implemented and tested
-alongside a block-based cache. Both now integrate with real Qwen decoding on CPU
+during generation. Fixed-capacity contiguous, exact-growth dynamic contiguous,
+and block-based caches are implemented and tested with real Qwen decoding on CPU
 and MPS through correctness adapters. A sequential memory-accounting sweep is
 available, along with a shared-budget resident-capacity experiment. Performance
 benchmarks are planned.
@@ -103,6 +103,11 @@ cleanup, workload-dependent resident sequence counts, and gather-copy overhead.
 The MPS command explicitly uses eager attention: the Phase 8 FP16/SDPA stock
 reference run produced nonfinite logits. This experiment is not a throughput
 benchmark or a claim of lower total system memory.
+
+The [dynamic-baseline extension](docs/dynamic_baseline_findings.md) strengthens
+that comparison with on-demand contiguous storage. It separates prefix relocation
+and transient growth storage from block gather copies. Stock Transformers
+`DynamicCache` remains an external reference, not an alias for the custom cache.
 
 Run the memory sweep with cached weights:
 

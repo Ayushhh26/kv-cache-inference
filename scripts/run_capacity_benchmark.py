@@ -161,8 +161,9 @@ def main():
         notes='Resident KV capacity, not parallel compute or throughput. Stop at first non-fitting request, never skip. Block pools shared across requests per layer. Budget excludes weights, metadata, stock references and temporary gather/attention outputs. Horizon capacity promised at admission and enforced. Four predictions retained, then release/replace first request and verify continuation for all. Exact accounting; no timing benchmark.',
         git_commit=command_output('git','rev-parse','HEAD'), git_status=command_output('git','status','--short'),
         source_sha256={str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest() for p in sources},
-        trials=[], capacity_ratios=[])
-    variants = [('contiguous',16), ('block',16)] if args.smoke else [('contiguous',16), ('block',8), ('block',16), ('block',32)]
+        dynamic_growth_policy='exact size on each append; transient old-plus-new excluded from persistent budget',
+        strategies=['contiguous', 'dynamic', 'block'], trials=[], capacity_ratios=[])
+    variants = [('contiguous',16), ('dynamic',16), ('block',16)] if args.smoke else [('contiguous',16), ('dynamic',16), ('block',8), ('block',16), ('block',32)]
     orders = [('ascending', list(CONTEXTS))] if args.smoke else [('ascending',list(CONTEXTS)), ('descending',list(reversed(CONTEXTS)))]
     args.output.parent.mkdir(parents=True, exist_ok=True)
     with args.output.open('x+') as handle:
@@ -199,7 +200,8 @@ def main():
                             baseline = trial['admitted_count']
                         else:
                             report['capacity_ratios'].append(dict(budget_bytes=budget_bytes, order=order_name,
-                                block_size=size, contiguous_sequences=baseline, block_sequences=trial['admitted_count'],
+                                strategy=strategy, block_size=size if strategy == 'block' else None,
+                                fixed_contiguous_sequences=baseline, admitted_sequences=trial['admitted_count'],
                                 capacity_ratio=trial['admitted_count']/baseline))
                         save()
                         print(f'{device} budget={budget_bytes} {order_name} {strategy}/{size}: retained {trial["admitted_count"]}, continuation/reuse verified',flush=True)

@@ -2,7 +2,8 @@
 
 Run Qwen2.5-0.5B-Instruct on Apple MPS or CPU and inspect its KV-cache tensors
 during generation. A fixed-capacity contiguous cache is implemented and tested
-as a standalone component. Model integration and comparative benchmarks are planned.
+as a standalone component, alongside a CPU block allocator with a fixed pool.
+Model integration and comparative benchmarks are planned.
 
 ## Setup
 
@@ -89,6 +90,8 @@ See [KV-cache findings](docs/phase2_findings.md) for the observed layout and cal
 
 The [contiguous-cache design](docs/phase3_findings.md) describes allocation,
 append/read behavior, memory accounting, and CPU test coverage.
+The [block-pool design](docs/phase4_findings.md) describes physical block
+allocation, reuse, and the distinction between pool and assigned capacity.
 
 Measured hardware findings and reproduction commands are in
 [Phase 1 findings](docs/phase1_findings.md).

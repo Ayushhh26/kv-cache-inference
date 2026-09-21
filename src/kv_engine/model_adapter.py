@@ -20,19 +20,20 @@ class StorageLayer(CacheLayerMixin):
 
     is_sliding = False
 
-    def __init__(self, strategy, config, capacity, block_size, dtype, device):
+    def __init__(self, strategy, config, capacity, block_size, dtype, device, shared_pool=None):
         super().__init__()
         self.capacity = capacity
         self.device = torch.device(device)
         self.pool = None
+        self.owns_pool = shared_pool is None
         shape = dict(num_layers=1, num_kv_heads=config.num_key_value_heads,
                      head_dim=getattr(config, 'head_dim', None) or config.hidden_size // config.num_attention_heads,
                      dtype=dtype, device=device)
         if strategy == 'contiguous':
             self.storage = ContiguousKVCache(max_tokens=capacity, **shape)
         elif strategy == 'block':
-            self.pool = BlockAllocator(num_blocks=(capacity + block_size - 1) // block_size,
-                                       block_size=block_size, **shape)
+            self.pool = shared_pool if shared_pool is not None else BlockAllocator(
+                num_blocks=(capacity + block_size - 1) // block_size, block_size=block_size, **shape)
             self.storage = BlockKVCache(self.pool)
         else:
             raise ValueError('Unknown custom cache strategy')
@@ -91,7 +92,7 @@ class StorageLayer(CacheLayerMixin):
 
     def close(self):
         self.storage.close()
-        if self.pool:
+        if self.pool and self.owns_pool:
             self.pool.close()
 
 
@@ -99,21 +100,34 @@ class ModelCacheAdapter(Cache):
     """Single-sequence, non-sliding Qwen cache for eager inference only."""
 
     def __init__(self, strategy, config, capacity, block_size=16,
-                 dtype=torch.float32, device='cpu'):
+                 dtype=torch.float32, device='cpu', shared_pools=None):
         if type(capacity) is not int or capacity < 1:
             raise ValueError('capacity must be positive')
         if type(block_size) is not int or block_size < 1:
             raise ValueError('block_size must be positive')
         if config.model_type != 'qwen2' or getattr(config, 'use_sliding_window', False):
             raise ValueError('Only non-sliding Qwen2 is supported')
-        super().__init__(layers=[StorageLayer(strategy, config, capacity, block_size, dtype, device)
-                                 for _ in range(config.num_hidden_layers)])
+        if shared_pools is not None:
+            if strategy != 'block' or len(shared_pools) != config.num_hidden_layers:
+                raise ValueError('Shared pools require one block pool per model layer')
+            expected = (1, config.num_key_value_heads,
+                        getattr(config, 'head_dim', None) or config.hidden_size // config.num_attention_heads)
+            for pool in shared_pools:
+                shape, pool_dtype, pool_device = pool.tensor_spec
+                if (shape != expected or pool_dtype != dtype or pool.block_size != block_size
+                        or pool_device.type != torch.device(device).type):
+                    raise ValueError('Shared pool specification mismatch')
+        self.shared_pools = shared_pools is not None
+        super().__init__(layers=[StorageLayer(strategy, config, capacity, block_size, dtype, device,
+                                             shared_pools[i] if shared_pools is not None else None)
+                                 for i in range(config.num_hidden_layers)])
 
     def report(self):
         metrics = [layer.storage.metrics() for layer in self.layers]
         records = [dict(layer=index, **record) for index, layer in enumerate(self.layers)
                    for record in layer.records]
         return dict(
+            reservation_scope='shared pool; do not sum across requests' if self.shared_pools else 'private request storage',
             assigned_bytes=sum(m['allocated_bytes'] for m in metrics),
             used_bytes=sum(m['used_bytes'] for m in metrics),
             wasted_assigned_bytes=sum(m['wasted_bytes'] for m in metrics),

@@ -4,7 +4,8 @@ Run Qwen2.5-0.5B-Instruct on Apple MPS or CPU and inspect its KV-cache tensors
 during generation. A fixed-capacity contiguous cache is implemented and tested
 alongside a block-based cache. Both now integrate with real Qwen decoding on CPU
 and MPS through correctness adapters. A sequential memory-accounting sweep is
-available; shared-budget capacity and performance benchmarks are planned.
+available, along with a shared-budget resident-capacity experiment. Performance
+benchmarks are planned.
 
 ## Setup
 
@@ -88,6 +89,20 @@ configuration and saves the observations as JSON in `results/`.
 See [KV-cache findings](docs/phase2_findings.md) for the observed layout and calculations.
 
 ## Project documentation
+
+Run the shared-budget capacity experiment with cached weights:
+
+```sh
+python scripts/run_capacity_benchmark.py --device cpu --output results/capacity_cpu_new.json
+python scripts/run_capacity_benchmark.py --device mps --attention eager --output results/capacity_mps_new.json
+python scripts/summarize_capacity_benchmark.py results/capacity_mps_new.json --output results/capacity_mps_new_summary.json
+```
+
+The [capacity findings](docs/phase8_findings.md) cover shared pools, admission,
+cleanup, workload-dependent resident sequence counts, and gather-copy overhead.
+The MPS command explicitly uses eager attention: the Phase 8 FP16/SDPA stock
+reference run produced nonfinite logits. This experiment is not a throughput
+benchmark or a claim of lower total system memory.
 
 Run the memory sweep with cached weights:
 

@@ -78,7 +78,7 @@ def run_request(model, ids, cache, max_new_tokens=4, observe=False):
                        past_key_values=cache, use_cache=True, logits_to_keep=1)
         last = output.logits[:, -1].float().cpu().clone()
         if not bool(torch.isfinite(last).all()):
-            raise RuntimeError('Nonfinite logits')
+            raise RuntimeError(f'Nonfinite logits: context={len(ids)}, prediction_step={step}, cached_tokens={cache.get_seq_length()}')
         token = last.argmax().item()
         tokens.append(token)
         logits.append(last)

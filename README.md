@@ -1,8 +1,8 @@
 # KV-cache inference experiment
 
 Run Qwen2.5-0.5B-Instruct on Apple MPS or CPU and inspect its KV-cache tensors
-during generation. Custom cache implementations and comparative benchmarks
-are planned.
+during generation. A fixed-capacity contiguous cache is implemented and tested
+as a standalone component. Model integration and comparative benchmarks are planned.
 
 ## Setup
 
@@ -86,6 +86,9 @@ configuration and saves the observations as JSON in `results/`.
 See [KV-cache findings](docs/phase2_findings.md) for the observed layout and calculations.
 
 ## Project documentation
+
+The [contiguous-cache design](docs/phase3_findings.md) describes allocation,
+append/read behavior, memory accounting, and CPU test coverage.
 
 Measured hardware findings and reproduction commands are in
 [Phase 1 findings](docs/phase1_findings.md).

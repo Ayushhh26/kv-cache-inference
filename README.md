@@ -3,7 +3,8 @@
 Run Qwen2.5-0.5B-Instruct on Apple MPS or CPU and inspect its KV-cache tensors
 during generation. A fixed-capacity contiguous cache is implemented and tested
 alongside a block-based cache. Both now integrate with real Qwen decoding on CPU
-and MPS through correctness adapters; comparative benchmarks are planned.
+and MPS through correctness adapters. A sequential memory-accounting sweep is
+available; shared-budget capacity and performance benchmarks are planned.
 
 ## Setup
 
@@ -87,6 +88,17 @@ configuration and saves the observations as JSON in `results/`.
 See [KV-cache findings](docs/phase2_findings.md) for the observed layout and calculations.
 
 ## Project documentation
+
+Run the memory sweep with cached weights:
+
+```sh
+python scripts/run_memory_benchmark.py --device mps --output results/memory_new.json
+python scripts/summarize_memory_benchmark.py results/memory_new.json --output results/memory_new_summary.json
+```
+
+The [memory-accounting findings](docs/phase7_findings.md) distinguish reserved
+pool storage, assigned capacity, actual KV data, and temporary gather copies.
+The current sweep does not demonstrate lower total reserved memory.
 
 Run `python scripts/verify_cache_integration.py --device cpu --output results/verify_new.json`
 to compare both adapters against stock Transformers using cached weights.

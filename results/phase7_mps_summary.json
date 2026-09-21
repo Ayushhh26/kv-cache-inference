@@ -1,0 +1,156 @@
+{
+  "device": "mps:0",
+  "dtype": "torch.float16",
+  "contexts": [
+    128,
+    192,
+    256,
+    384,
+    512,
+    768,
+    1024,
+    1536,
+    2048
+  ],
+  "repeats": 2,
+  "runs": 72,
+  "note": "Sums over sequential request observations including repeats, not simultaneous memory. Utilization is ratio of summed bytes, not mean of percentages.",
+  "aggregates": [
+    {
+      "stage": "prefill",
+      "strategy": "contiguous",
+      "block_size": null,
+      "observations": 18,
+      "totals": {
+        "reserved_pool_bytes": 460062720,
+        "allocated_bytes": 460062720,
+        "used_bytes": 168296448,
+        "wasted_bytes": 291766272,
+        "free_pool_bytes": 0,
+        "total_unused_reserved_bytes": 291766272,
+        "gather_copy_bytes_total": 0
+      },
+      "assigned_utilization_percent": 36.58119658119658,
+      "reserved_utilization_percent": 36.58119658119658
+    },
+    {
+      "stage": "final",
+      "strategy": "contiguous",
+      "block_size": null,
+      "observations": 18,
+      "totals": {
+        "reserved_pool_bytes": 460062720,
+        "allocated_bytes": 460062720,
+        "used_bytes": 168960000,
+        "wasted_bytes": 291102720,
+        "free_pool_bytes": 0,
+        "total_unused_reserved_bytes": 291102720,
+        "gather_copy_bytes_total": 0
+      },
+      "assigned_utilization_percent": 36.72542735042735,
+      "reserved_utilization_percent": 36.72542735042735
+    },
+    {
+      "stage": "prefill",
+      "strategy": "block",
+      "block_size": 8,
+      "observations": 18,
+      "totals": {
+        "reserved_pool_bytes": 460062720,
+        "allocated_bytes": 168296448,
+        "used_bytes": 168296448,
+        "wasted_bytes": 0,
+        "free_pool_bytes": 291766272,
+        "total_unused_reserved_bytes": 291766272,
+        "gather_copy_bytes_total": 168296448
+      },
+      "assigned_utilization_percent": 100.0,
+      "reserved_utilization_percent": 36.58119658119658
+    },
+    {
+      "stage": "final",
+      "strategy": "block",
+      "block_size": 8,
+      "observations": 18,
+      "totals": {
+        "reserved_pool_bytes": 460062720,
+        "allocated_bytes": 170065920,
+        "used_bytes": 168960000,
+        "wasted_bytes": 1105920,
+        "free_pool_bytes": 289996800,
+        "total_unused_reserved_bytes": 291102720,
+        "gather_copy_bytes_total": 674512896
+      },
+      "assigned_utilization_percent": 99.34971098265896,
+      "reserved_utilization_percent": 36.72542735042735
+    },
+    {
+      "stage": "prefill",
+      "strategy": "block",
+      "block_size": 16,
+      "observations": 18,
+      "totals": {
+        "reserved_pool_bytes": 460062720,
+        "allocated_bytes": 168296448,
+        "used_bytes": 168296448,
+        "wasted_bytes": 0,
+        "free_pool_bytes": 291766272,
+        "total_unused_reserved_bytes": 291766272,
+        "gather_copy_bytes_total": 168296448
+      },
+      "assigned_utilization_percent": 100.0,
+      "reserved_utilization_percent": 36.58119658119658
+    },
+    {
+      "stage": "final",
+      "strategy": "block",
+      "block_size": 16,
+      "observations": 18,
+      "totals": {
+        "reserved_pool_bytes": 460062720,
+        "allocated_bytes": 171835392,
+        "used_bytes": 168960000,
+        "wasted_bytes": 2875392,
+        "free_pool_bytes": 288227328,
+        "total_unused_reserved_bytes": 291102720,
+        "gather_copy_bytes_total": 674512896
+      },
+      "assigned_utilization_percent": 98.3266590389016,
+      "reserved_utilization_percent": 36.72542735042735
+    },
+    {
+      "stage": "prefill",
+      "strategy": "block",
+      "block_size": 32,
+      "observations": 18,
+      "totals": {
+        "reserved_pool_bytes": 460062720,
+        "allocated_bytes": 168296448,
+        "used_bytes": 168296448,
+        "wasted_bytes": 0,
+        "free_pool_bytes": 291766272,
+        "total_unused_reserved_bytes": 291766272,
+        "gather_copy_bytes_total": 168296448
+      },
+      "assigned_utilization_percent": 100.0,
+      "reserved_utilization_percent": 36.58119658119658
+    },
+    {
+      "stage": "final",
+      "strategy": "block",
+      "block_size": 32,
+      "observations": 18,
+      "totals": {
+        "reserved_pool_bytes": 460062720,
+        "allocated_bytes": 175374336,
+        "used_bytes": 168960000,
+        "wasted_bytes": 6414336,
+        "free_pool_bytes": 284688384,
+        "total_unused_reserved_bytes": 291102720,
+        "gather_copy_bytes_total": 674512896
+      },
+      "assigned_utilization_percent": 96.34248878923766,
+      "reserved_utilization_percent": 36.72542735042735
+    }
+  ]
+}

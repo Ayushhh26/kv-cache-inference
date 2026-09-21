@@ -1,0 +1,9 @@
+.venv/
+.cache/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.DS_Store
+
+# Original planning documents remain local and are not published.
+/kv_cache_project_agent_docs/

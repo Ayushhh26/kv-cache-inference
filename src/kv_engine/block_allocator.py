@@ -12,7 +12,7 @@ class BlockAllocator:
     """
 
     def __init__(self, *, num_blocks, num_layers, num_kv_heads, head_dim,
-                 block_size=16, dtype=torch.float32):
+                 block_size=16, dtype=torch.float32, device='cpu'):
         for name, value in dict(num_blocks=num_blocks, num_layers=num_layers,
                                 num_kv_heads=num_kv_heads, head_dim=head_dim,
                                 block_size=block_size).items():
@@ -20,11 +20,14 @@ class BlockAllocator:
                 raise ValueError(f'{name} must be a positive integer')
         if dtype not in (torch.float16, torch.float32, torch.bfloat16):
             raise ValueError('dtype must be float16, float32, or bfloat16')
+        device = torch.device(device)
+        if device.type not in ('cpu', 'mps'):
+            raise ValueError('Pool requires CPU or MPS')
         self._num_blocks = num_blocks
         self._block_size = block_size
         self._storage = torch.empty(
             (num_blocks, 2, num_layers, num_kv_heads, block_size, head_dim),
-            dtype=dtype, device='cpu',
+            dtype=dtype, device=device,
         )
         self._bytes_per_block = self._storage.numel() * self._storage.element_size() // num_blocks
         self._free = list(reversed(range(num_blocks)))
@@ -41,6 +44,13 @@ class BlockAllocator:
     @property
     def bytes_per_block(self):
         return self._bytes_per_block
+
+    @property
+    def tensor_spec(self):
+        """Shape without the token axis, dtype, and device for cache clients."""
+        self._require_open()
+        shape = self._storage.shape
+        return (shape[2], shape[3], shape[5]), self._storage.dtype, self._storage.device
 
     def _require_open(self):
         if self.closed:

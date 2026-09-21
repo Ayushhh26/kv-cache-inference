@@ -2,8 +2,8 @@
 
 Run Qwen2.5-0.5B-Instruct on Apple MPS or CPU and inspect its KV-cache tensors
 during generation. A fixed-capacity contiguous cache is implemented and tested
-as a standalone component, alongside a CPU block allocator with a fixed pool.
-Model integration and comparative benchmarks are planned.
+alongside a block-based cache. Both now integrate with real Qwen decoding on CPU
+and MPS through correctness adapters; comparative benchmarks are planned.
 
 ## Setup
 
@@ -88,10 +88,18 @@ See [KV-cache findings](docs/phase2_findings.md) for the observed layout and cal
 
 ## Project documentation
 
+Run `python scripts/verify_cache_integration.py --device cpu --output results/verify_new.json`
+to compare both adapters against stock Transformers using cached weights.
+Use `--device mps` for a Metal run. See the [integration findings](docs/phase6_findings.md)
+for correctness results and separately reported gather-copy overhead. The block
+adapter uses ordinary attention on gathered tensors, not a paged-attention kernel.
+
 The [contiguous-cache design](docs/phase3_findings.md) describes allocation,
 append/read behavior, memory accounting, and CPU test coverage.
 The [block-pool design](docs/phase4_findings.md) describes physical block
 allocation, reuse, and the distinction between pool and assigned capacity.
+The [block-cache design](docs/phase5_findings.md) covers sequence block tables,
+ordered reads, internal fragmentation, and temporary read-copy overhead.
 
 Measured hardware findings and reproduction commands are in
 [Phase 1 findings](docs/phase1_findings.md).

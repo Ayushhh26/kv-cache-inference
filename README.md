@@ -72,7 +72,6 @@ measured or claimed here.
 
 ## Project documentation
 
-The original planning documents are kept locally and excluded from this repository.
 Measured hardware findings and reproduction commands are in
 [Phase 1 findings](docs/phase1_findings.md).
 The offline tests check device selection, timing arithmetic, and token callback

@@ -1,0 +1,395 @@
+{
+  "device": "cpu",
+  "dtype": "torch.float32",
+  "attention": "eager",
+  "context": 128,
+  "block_size": 16,
+  "p95": null,
+  "results": [
+    {
+      "active_requests": 1,
+      "strategy": "stock",
+      "samples": 2,
+      "aggregate_decode_tokens_per_second": {
+        "median": 30.360683722494926,
+        "minimum": 28.878318154107337,
+        "maximum": 31.843049290882515
+      },
+      "generation_seconds": {
+        "median": 0.29008897906169295,
+        "minimum": 0.2735788749996573,
+        "maximum": 0.30659908312372863
+      },
+      "mean_request_ttft_seconds": {
+        "median": 0.1909014795674011,
+        "minimum": 0.17935808398760855,
+        "maximum": 0.20244487514719367
+      },
+      "mean_request_tpot_seconds": {
+        "median": 0.033062499831430614,
+        "minimum": 0.03140693033734957,
+        "maximum": 0.03471806932551166
+      },
+      "slots": [
+        {
+          "request_id": 0,
+          "generated_tokens": 4,
+          "ttft_seconds": {
+            "median": 0.1909014795674011,
+            "minimum": 0.17935808398760855,
+            "maximum": 0.20244487514719367
+          },
+          "mean_tpot_seconds": {
+            "median": 0.033062499831430614,
+            "minimum": 0.03140693033734957,
+            "maximum": 0.03471806932551166
+          }
+        }
+      ]
+    },
+    {
+      "active_requests": 1,
+      "strategy": "contiguous",
+      "samples": 2,
+      "aggregate_decode_tokens_per_second": {
+        "median": 28.338457189410516,
+        "minimum": 20.5101675819203,
+        "maximum": 36.16674679690073
+      },
+      "generation_seconds": {
+        "median": 0.28421518800314516,
+        "minimum": 0.2531104169320315,
+        "maximum": 0.3153199590742588
+      },
+      "mean_request_ttft_seconds": {
+        "median": 0.16959595901425928,
+        "minimum": 0.16903895908035338,
+        "maximum": 0.17015295894816518
+      },
+      "mean_request_tpot_seconds": {
+        "median": 0.03820640966296196,
+        "minimum": 0.02765248599462211,
+        "maximum": 0.04876033333130181
+      },
+      "slots": [
+        {
+          "request_id": 0,
+          "generated_tokens": 4,
+          "ttft_seconds": {
+            "median": 0.16959595901425928,
+            "minimum": 0.16903895908035338,
+            "maximum": 0.17015295894816518
+          },
+          "mean_tpot_seconds": {
+            "median": 0.03820640966296196,
+            "minimum": 0.02765248599462211,
+            "maximum": 0.04876033333130181
+          }
+        }
+      ]
+    },
+    {
+      "active_requests": 1,
+      "strategy": "dynamic",
+      "samples": 2,
+      "aggregate_decode_tokens_per_second": {
+        "median": 31.60042809083818,
+        "minimum": 29.553071557716994,
+        "maximum": 33.64778462395937
+      },
+      "generation_seconds": {
+        "median": 0.26396360399667174,
+        "minimum": 0.26195162488147616,
+        "maximum": 0.2659755831118673
+      },
+      "mean_request_ttft_seconds": {
+        "median": 0.16861985391005874,
+        "minimum": 0.16445608297362924,
+        "maximum": 0.17278362484648824
+      },
+      "mean_request_tpot_seconds": {
+        "median": 0.031781250028871,
+        "minimum": 0.029722666678329308,
+        "maximum": 0.03383983337941269
+      },
+      "slots": [
+        {
+          "request_id": 0,
+          "generated_tokens": 4,
+          "ttft_seconds": {
+            "median": 0.16861985391005874,
+            "minimum": 0.16445608297362924,
+            "maximum": 0.17278362484648824
+          },
+          "mean_tpot_seconds": {
+            "median": 0.031781250028871,
+            "minimum": 0.029722666678329308,
+            "maximum": 0.03383983337941269
+          }
+        }
+      ]
+    },
+    {
+      "active_requests": 1,
+      "strategy": "block",
+      "samples": 2,
+      "aggregate_decode_tokens_per_second": {
+        "median": 26.9535005939884,
+        "minimum": 24.411678544243358,
+        "maximum": 29.495322643733445
+      },
+      "generation_seconds": {
+        "median": 0.2813356254482642,
+        "minimum": 0.2666797919664532,
+        "maximum": 0.29599145893007517
+      },
+      "mean_request_ttft_seconds": {
+        "median": 0.16902764595579356,
+        "minimum": 0.16496237507089972,
+        "maximum": 0.1730929168406874
+      },
+      "mean_request_tpot_seconds": {
+        "median": 0.037435993164156876,
+        "minimum": 0.03390580563185116,
+        "maximum": 0.040966180696462594
+      },
+      "slots": [
+        {
+          "request_id": 0,
+          "generated_tokens": 4,
+          "ttft_seconds": {
+            "median": 0.16902764595579356,
+            "minimum": 0.16496237507089972,
+            "maximum": 0.1730929168406874
+          },
+          "mean_tpot_seconds": {
+            "median": 0.037435993164156876,
+            "minimum": 0.03390580563185116,
+            "maximum": 0.040966180696462594
+          }
+        }
+      ]
+    },
+    {
+      "active_requests": 2,
+      "strategy": "stock",
+      "samples": 2,
+      "aggregate_decode_tokens_per_second": {
+        "median": 34.36574375714199,
+        "minimum": 32.116511505076346,
+        "maximum": 36.61497600920764
+      },
+      "generation_seconds": {
+        "median": 0.5202296460047364,
+        "minimum": 0.4958927088882774,
+        "maximum": 0.5445665831211954
+      },
+      "mean_request_ttft_seconds": {
+        "median": 0.26000606251182035,
+        "minimum": 0.2505507085006684,
+        "maximum": 0.2694614165229723
+      },
+      "mean_request_tpot_seconds": {
+        "median": 0.08167914242949337,
+        "minimum": 0.07738166682732603,
+        "maximum": 0.08597661803166072
+      },
+      "slots": [
+        {
+          "request_id": 0,
+          "generated_tokens": 4,
+          "ttft_seconds": {
+            "median": 0.17513297905679792,
+            "minimum": 0.1690826250705868,
+            "maximum": 0.18118333304300904
+          },
+          "mean_tpot_seconds": {
+            "median": 0.10490811817968886,
+            "minimum": 0.10013869466880958,
+            "maximum": 0.10967754169056813
+          }
+        },
+        {
+          "request_id": 1,
+          "generated_tokens": 4,
+          "ttft_seconds": {
+            "median": 0.34487914596684277,
+            "minimum": 0.33201879193075,
+            "maximum": 0.35773950000293553
+          },
+          "mean_tpot_seconds": {
+            "median": 0.05845016667929788,
+            "minimum": 0.054624638985842466,
+            "maximum": 0.0622756943727533
+          }
+        }
+      ]
+    },
+    {
+      "active_requests": 2,
+      "strategy": "contiguous",
+      "samples": 2,
+      "aggregate_decode_tokens_per_second": {
+        "median": 33.00863687562129,
+        "minimum": 30.969273693076335,
+        "maximum": 35.04800005816625
+      },
+      "generation_seconds": {
+        "median": 0.5102662709541619,
+        "minimum": 0.5058486668858677,
+        "maximum": 0.514683875022456
+      },
+      "mean_request_ttft_seconds": {
+        "median": 0.2427992502343841,
+        "minimum": 0.23286012501921505,
+        "maximum": 0.25273837544955313
+      },
+      "mean_request_tpot_seconds": {
+        "median": 0.08419589933085565,
+        "minimum": 0.08283324302950253,
+        "maximum": 0.08555855563220878
+      },
+      "slots": [
+        {
+          "request_id": 0,
+          "generated_tokens": 4,
+          "ttft_seconds": {
+            "median": 0.1578060834435746,
+            "minimum": 0.15361912501975894,
+            "maximum": 0.16199304186739028
+          },
+          "mean_tpot_seconds": {
+            "median": 0.10756718068538854,
+            "minimum": 0.10653459730868538,
+            "maximum": 0.10859976406209171
+          }
+        },
+        {
+          "request_id": 1,
+          "generated_tokens": 4,
+          "ttft_seconds": {
+            "median": 0.32779241702519357,
+            "minimum": 0.31210112501867115,
+            "maximum": 0.343483709031716
+          },
+          "mean_tpot_seconds": {
+            "median": 0.06082461797632277,
+            "minimum": 0.05706672199691335,
+            "maximum": 0.06458251395573218
+          }
+        }
+      ]
+    },
+    {
+      "active_requests": 2,
+      "strategy": "dynamic",
+      "samples": 2,
+      "aggregate_decode_tokens_per_second": {
+        "median": 31.41992241681293,
+        "minimum": 31.305688432801286,
+        "maximum": 31.53415640082458
+      },
+      "generation_seconds": {
+        "median": 0.6523774379165843,
+        "minimum": 0.5417479169555008,
+        "maximum": 0.7630069588776678
+      },
+      "mean_request_ttft_seconds": {
+        "median": 0.36814926064107567,
+        "minimum": 0.26641945843584836,
+        "maximum": 0.469879062846303
+      },
+      "mean_request_tpot_seconds": {
+        "median": 0.09000859027340387,
+        "minimum": 0.08697457634843886,
+        "maximum": 0.09304260419836888
+      },
+      "slots": [
+        {
+          "request_id": 0,
+          "generated_tokens": 4,
+          "ttft_seconds": {
+            "median": 0.2748943753540516,
+            "minimum": 0.1813685419037938,
+            "maximum": 0.36842020880430937
+          },
+          "mean_tpot_seconds": {
+            "median": 0.11635941655064622,
+            "minimum": 0.1105233053676784,
+            "maximum": 0.12219552773361404
+          }
+        },
+        {
+          "request_id": 1,
+          "generated_tokens": 4,
+          "ttft_seconds": {
+            "median": 0.46140414592809975,
+            "minimum": 0.3514703749679029,
+            "maximum": 0.5713379168882966
+          },
+          "mean_tpot_seconds": {
+            "median": 0.06365776399616152,
+            "minimum": 0.06342584732919931,
+            "maximum": 0.06388968066312373
+          }
+        }
+      ]
+    },
+    {
+      "active_requests": 2,
+      "strategy": "block",
+      "samples": 2,
+      "aggregate_decode_tokens_per_second": {
+        "median": 28.200566220884685,
+        "minimum": 26.00185695839736,
+        "maximum": 30.39927548337201
+      },
+      "generation_seconds": {
+        "median": 0.5516107500297949,
+        "minimum": 0.5511129579972476,
+        "maximum": 0.5521085420623422
+      },
+      "mean_request_ttft_seconds": {
+        "median": 0.24997564579825848,
+        "minimum": 0.23789308359846473,
+        "maximum": 0.26205820799805224
+      },
+      "mean_request_tpot_seconds": {
+        "median": 0.09391646882674345,
+        "minimum": 0.09062174315719555,
+        "maximum": 0.09721119449629137
+      },
+      "slots": [
+        {
+          "request_id": 0,
+          "generated_tokens": 4,
+          "ttft_seconds": {
+            "median": 0.16241141653154045,
+            "minimum": 0.15443837502971292,
+            "maximum": 0.170384458033368
+          },
+          "mean_tpot_seconds": {
+            "median": 0.11647597933188081,
+            "minimum": 0.11544981963622074,
+            "maximum": 0.11750213902754088
+          }
+        },
+        {
+          "request_id": 1,
+          "generated_tokens": 4,
+          "ttft_seconds": {
+            "median": 0.3375398750649765,
+            "minimum": 0.32134779216721654,
+            "maximum": 0.3537319579627365
+          },
+          "mean_tpot_seconds": {
+            "median": 0.07135695832160613,
+            "minimum": 0.06579366667817037,
+            "maximum": 0.07692024996504188
+          }
+        }
+      ]
+    }
+  ],
+  "notes": "Sequential round-robin, simultaneous arrival, no batching. Per-request latency includes waiting for others. Aggregate decode starts after all prefills, not first token. Bounded check, no tail or parallel-serving claims. Means across request slots are formed within each group, then medians/ranges across repeated groups."
+}

@@ -102,6 +102,16 @@ TTFT, decode timing, separate copy diagnostics, and remaining sweep work. It
 compares stock, fixed contiguous, dynamic contiguous, and block-16 with one
 active request; it is not a concurrent-serving benchmark.
 
+The [round-robin check](docs/phase9_round_robin_findings.md) extends this to
+1/2/4 resident requests at context 512, with sequential forwards and shared
+block pools. It separates waiting-inclusive request latency from aggregate
+post-prefill decode throughput:
+
+```sh
+python scripts/run_round_robin_check.py --device mps --output results/rr_new.json
+python scripts/summarize_round_robin_check.py results/rr_new.json --output results/rr_new_summary.json
+```
+
 Run the shared-budget capacity experiment with cached weights:
 
 ```sh

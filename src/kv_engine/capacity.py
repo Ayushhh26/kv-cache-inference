@@ -16,7 +16,8 @@ class KVCapacityBudget:
     """
 
     def __init__(self, strategy, config, budget_bytes, sequence_capacity,
-                 block_size=16, dtype=torch.float32, device='cpu'):
+                 block_size=16, dtype=torch.float32, device='cpu',
+                 diagnostics=True, validate_positions=True):
         for value in (budget_bytes, sequence_capacity, block_size):
             if type(value) is not int or value < 1:
                 raise ValueError('Budget, sequence capacity and block size must be positive integers')
@@ -27,6 +28,7 @@ class KVCapacityBudget:
         self.strategy, self.config = strategy, config
         self.budget_bytes, self.sequence_capacity = budget_bytes, sequence_capacity
         self.block_size, self.dtype, self.device = block_size, dtype, device
+        self.diagnostics, self.validate_positions = diagnostics, validate_positions
         dim = getattr(config, 'head_dim', None) or config.hidden_size // config.num_attention_heads
         self.bytes_per_token = 2 * config.num_hidden_layers * config.num_key_value_heads * dim * torch.empty((), dtype=dtype).element_size()
         self.pools = []
@@ -70,7 +72,8 @@ class KVCapacityBudget:
         if sum(entry[1] for entry in self.active.values()) + cost > limit:
             raise MemoryError('Next sequence does not fit the shared KV budget')
         cache = ModelCacheAdapter(self.strategy, self.config, self.sequence_capacity,
-            self.block_size, self.dtype, self.device, shared_pools=self.pools if self.pools else None)
+            self.block_size, self.dtype, self.device, shared_pools=self.pools if self.pools else None,
+            diagnostics=self.diagnostics, validate_positions=self.validate_positions)
         # Reservation is full-size for contiguous, but both adapters enforce
         # the declared horizon to make admission guarantees explicit and equal.
         for layer in cache.layers:

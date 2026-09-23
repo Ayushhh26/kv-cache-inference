@@ -4,8 +4,8 @@ Run Qwen2.5-0.5B-Instruct on Apple MPS or CPU and inspect its KV-cache tensors
 during generation. Fixed-capacity contiguous, exact-growth dynamic contiguous,
 and block-based caches are implemented and tested with real Qwen decoding on CPU
 and MPS through correctness adapters. A sequential memory-accounting sweep is
-available, along with a shared-budget resident-capacity experiment. Performance
-benchmarks are planned.
+available, along with a shared-budget resident-capacity experiment and a
+single-request timing pilot. The full performance sweep remains planned.
 
 ## Setup
 
@@ -89,6 +89,18 @@ configuration and saves the observations as JSON in `results/`.
 See [KV-cache findings](docs/phase2_findings.md) for the observed layout and calculations.
 
 ## Project documentation
+
+Run the Phase 9 timing pilot with cached weights:
+
+```sh
+python scripts/run_performance_pilot.py --device mps --output results/pilot_new.json
+python scripts/summarize_performance_pilot.py results/pilot_new.json --output results/pilot_new_summary.json
+```
+
+The [pilot methodology and findings](docs/phase9_pilot_findings.md) define core
+TTFT, decode timing, separate copy diagnostics, and remaining sweep work. It
+compares stock, fixed contiguous, dynamic contiguous, and block-16 with one
+active request; it is not a concurrent-serving benchmark.
 
 Run the shared-budget capacity experiment with cached weights:
 

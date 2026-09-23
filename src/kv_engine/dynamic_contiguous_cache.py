@@ -17,7 +17,7 @@ class DynamicContiguousKVCache:
     """
 
     def __init__(self, *, num_layers, num_kv_heads, head_dim, max_tokens,
-                 dtype=torch.float32, device='cpu'):
+                 dtype=torch.float32, device='cpu', diagnostics=True):
         if any(type(v) is not int or v < 1 for v in
                (num_layers, num_kv_heads, head_dim, max_tokens)):
             raise ValueError('Dimensions and max_tokens must be positive integers')
@@ -28,6 +28,7 @@ class DynamicContiguousKVCache:
             raise ValueError('Cache requires CPU or MPS')
         self.shape = (num_layers, num_kv_heads, head_dim)
         self.dtype, self.max_tokens = dtype, max_tokens
+        self.diagnostics = diagnostics
         self.bytes_per_token = 2 * num_layers * num_kv_heads * head_dim * torch.empty((), dtype=dtype).element_size()
         self._buffer = None
         self.closed = False
@@ -66,17 +67,20 @@ class DynamicContiguousKVCache:
         end = previous + keys.shape[2]
         if end > self.max_tokens:
             raise BufferError('Dynamic cache capacity exceeded')
-        self._sync()
-        start = time.perf_counter()
+        if self.diagnostics:
+            self._sync()
+        start = time.perf_counter() if self.diagnostics else None
         replacement = ContiguousKVCache(num_layers=layers, num_kv_heads=heads,
             head_dim=dim, max_tokens=end, dtype=self.dtype, device=self.device)
         try:
             if self._buffer is not None:
                 replacement.append(*self._buffer.read())
-            self._sync()
-            growth_seconds = time.perf_counter() - start
+            if self.diagnostics:
+                self._sync()
+                growth_seconds = time.perf_counter() - start
             replacement.append(keys, values)
-            self._sync()
+            if self.diagnostics:
+                self._sync()
         except Exception:
             replacement.close()
             raise
@@ -84,6 +88,8 @@ class DynamicContiguousKVCache:
         if self._buffer is not None:
             self._buffer.close()
         self._buffer = replacement
+        if not self.diagnostics:
+            return
         old_bytes, new_bytes = previous * self.bytes_per_token, end * self.bytes_per_token
         self.allocation_count += 1
         self.reallocation_count += int(previous > 0)
@@ -116,6 +122,7 @@ class DynamicContiguousKVCache:
         used = self._buffer.metrics()['used_slots'] if self._buffer is not None else 0
         size = used * self.bytes_per_token
         return dict(allocated_slots=used, used_slots=used, wasted_slots=0,
+            diagnostics_enabled=self.diagnostics,
             allocated_bytes=size, used_bytes=size, wasted_bytes=0,
             utilization_percent=100.0 if used else 0.0,
             allocation_count=self.allocation_count, reallocation_count=self.reallocation_count,

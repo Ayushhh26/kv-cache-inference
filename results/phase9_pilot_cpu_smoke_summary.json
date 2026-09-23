@@ -1,0 +1,155 @@
+{
+  "device": "cpu",
+  "dtype": "torch.float32",
+  "attention": "eager",
+  "active_requests": 1,
+  "block_size": 16,
+  "p95": null,
+  "notes": "Pilot only. Run-level medians and ranges; too few independent repeats for tail claims. Core TTFT includes fresh cache setup but excludes tokenization/input transfer. Diagnostic runs are separate. No batched/concurrent serving claims. Do not infer total process memory from these timings.",
+  "results": [
+    {
+      "context": 128,
+      "strategy": "stock",
+      "samples": 2,
+      "generated_tokens": 4,
+      "cache_setup_seconds": {
+        "median": 2.0166393369436264e-05,
+        "minimum": 1.8707942217588425e-05,
+        "maximum": 2.1624844521284103e-05
+      },
+      "prefill_seconds": {
+        "median": 0.1683991455938667,
+        "minimum": 0.1568859580438584,
+        "maximum": 0.179912333143875
+      },
+      "ttft_seconds": {
+        "median": 0.16841931198723614,
+        "minimum": 0.156904665986076,
+        "maximum": 0.1799339579883963
+      },
+      "generation_seconds": {
+        "median": 0.251344749936834,
+        "minimum": 0.24294612486846745,
+        "maximum": 0.2597433750052005
+      },
+      "mean_tpot_seconds": {
+        "median": 0.027641812649865947,
+        "minimum": 0.026603139005601406,
+        "maximum": 0.028680486294130485
+      },
+      "decode_tokens_per_second": {
+        "median": 36.22823069662748,
+        "minimum": 34.8669122881871,
+        "maximum": 37.58954910506785
+      }
+    },
+    {
+      "context": 128,
+      "strategy": "contiguous",
+      "samples": 2,
+      "generated_tokens": 4,
+      "cache_setup_seconds": {
+        "median": 0.00011787447147071362,
+        "minimum": 0.00011345790699124336,
+        "maximum": 0.00012229103595018387
+      },
+      "prefill_seconds": {
+        "median": 0.17454154207371175,
+        "minimum": 0.1546224590856582,
+        "maximum": 0.1944606250617653
+      },
+      "ttft_seconds": {
+        "median": 0.17465941654518247,
+        "minimum": 0.15474475012160838,
+        "maximum": 0.19457408296875656
+      },
+      "generation_seconds": {
+        "median": 0.2659390205517411,
+        "minimum": 0.23600704106502235,
+        "maximum": 0.2958710000384599
+      },
+      "mean_tpot_seconds": {
+        "median": 0.030426534668852888,
+        "minimum": 0.027087430314471323,
+        "maximum": 0.03376563902323445
+      },
+      "decode_tokens_per_second": {
+        "median": 33.26669927707543,
+        "minimum": 29.615906256413236,
+        "maximum": 36.91749229773763
+      }
+    },
+    {
+      "context": 128,
+      "strategy": "dynamic",
+      "samples": 2,
+      "generated_tokens": 4,
+      "cache_setup_seconds": {
+        "median": 0.00011172890663146973,
+        "minimum": 0.00010816683061420918,
+        "maximum": 0.00011529098264873028
+      },
+      "prefill_seconds": {
+        "median": 0.1566970000276342,
+        "minimum": 0.15197700005955994,
+        "maximum": 0.16141699999570847
+      },
+      "ttft_seconds": {
+        "median": 0.15680872893426567,
+        "minimum": 0.15208516689017415,
+        "maximum": 0.1615322909783572
+      },
+      "generation_seconds": {
+        "median": 0.24383566691540182,
+        "minimum": 0.23571745888330042,
+        "maximum": 0.2519538749475032
+      },
+      "mean_tpot_seconds": {
+        "median": 0.02900897932704538,
+        "minimum": 0.027877430664375424,
+        "maximum": 0.030140527989715338
+      },
+      "decode_tokens_per_second": {
+        "median": 34.52461532672358,
+        "minimum": 33.17791912408514,
+        "maximum": 35.871311529362
+      }
+    },
+    {
+      "context": 128,
+      "strategy": "block",
+      "samples": 2,
+      "generated_tokens": 4,
+      "cache_setup_seconds": {
+        "median": 0.00014441658277064562,
+        "minimum": 0.00014166603796184063,
+        "maximum": 0.0001471671275794506
+      },
+      "prefill_seconds": {
+        "median": 0.18745831248816103,
+        "minimum": 0.1817759999539703,
+        "maximum": 0.19314062502235174
+      },
+      "ttft_seconds": {
+        "median": 0.18760272907093167,
+        "minimum": 0.18191766599193215,
+        "maximum": 0.1932877921499312
+      },
+      "generation_seconds": {
+        "median": 0.2844631461193785,
+        "minimum": 0.2823463750537485,
+        "maximum": 0.2865799171850085
+      },
+      "mean_tpot_seconds": {
+        "median": 0.03228680568281561,
+        "minimum": 0.031097375011692446,
+        "maximum": 0.03347623635393878
+      },
+      "decode_tokens_per_second": {
+        "median": 31.01449567346988,
+        "minimum": 29.871936302132752,
+        "maximum": 32.15705504480701
+      }
+    }
+  ]
+}

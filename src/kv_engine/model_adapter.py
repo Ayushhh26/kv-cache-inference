@@ -21,9 +21,12 @@ class StorageLayer(CacheLayerMixin):
 
     is_sliding = False
 
-    def __init__(self, strategy, config, capacity, block_size, dtype, device, shared_pool=None):
+    def __init__(self, strategy, config, capacity, block_size, dtype, device, shared_pool=None,
+                 diagnostics=True, validate_positions=True):
         super().__init__()
         self.capacity = capacity
+        self.diagnostics = diagnostics
+        self.validate_positions = validate_positions
         self.device = torch.device(device)
         self.pool = None
         self.owns_pool = shared_pool is None
@@ -33,7 +36,7 @@ class StorageLayer(CacheLayerMixin):
         if strategy == 'contiguous':
             self.storage = ContiguousKVCache(max_tokens=capacity, **shape)
         elif strategy == 'dynamic':
-            self.storage = DynamicContiguousKVCache(max_tokens=capacity, **shape)
+            self.storage = DynamicContiguousKVCache(max_tokens=capacity, diagnostics=diagnostics, **shape)
         elif strategy == 'block':
             self.pool = shared_pool if shared_pool is not None else BlockAllocator(
                 num_blocks=(capacity + block_size - 1) // block_size, block_size=block_size, **shape)
@@ -52,9 +55,13 @@ class StorageLayer(CacheLayerMixin):
         if previous + key_states.shape[-2] > self.capacity:
             raise BufferError('Adapter capacity exceeded')
         position = (cache_kwargs or {}).get('cache_position')
-        if position is not None and not torch.equal(position, torch.arange(
+        if self.validate_positions and position is not None and not torch.equal(position, torch.arange(
                 previous, previous + key_states.shape[-2], device=position.device)):
             raise ValueError('Only sequential cache positions are supported')
+        if not self.diagnostics:
+            self.storage.append(key_states, value_states)
+            self.is_initialized = True
+            return self.storage.read()
         synchronize(self.device)
         start = time.perf_counter()
         self.storage.append(key_states, value_states)
@@ -103,7 +110,8 @@ class ModelCacheAdapter(Cache):
     """Single-sequence, non-sliding Qwen cache for eager inference only."""
 
     def __init__(self, strategy, config, capacity, block_size=16,
-                 dtype=torch.float32, device='cpu', shared_pools=None):
+                 dtype=torch.float32, device='cpu', shared_pools=None,
+                 diagnostics=True, validate_positions=True):
         if type(capacity) is not int or capacity < 1:
             raise ValueError('capacity must be positive')
         if type(block_size) is not int or block_size < 1:
@@ -121,8 +129,11 @@ class ModelCacheAdapter(Cache):
                         or pool_device.type != torch.device(device).type):
                     raise ValueError('Shared pool specification mismatch')
         self.shared_pools = shared_pools is not None
+        self.diagnostics = diagnostics
+        self.validate_positions = validate_positions
         super().__init__(layers=[StorageLayer(strategy, config, capacity, block_size, dtype, device,
-                                             shared_pools[i] if shared_pools is not None else None)
+                                             shared_pools[i] if shared_pools is not None else None,
+                                             diagnostics, validate_positions)
                                  for i in range(config.num_hidden_layers)])
 
     def report(self):
@@ -130,6 +141,8 @@ class ModelCacheAdapter(Cache):
         records = [dict(layer=index, **record) for index, layer in enumerate(self.layers)
                    for record in layer.records]
         return dict(
+            diagnostics_enabled=self.diagnostics,
+            position_validation_enabled=self.validate_positions,
             reservation_scope='shared pool; do not sum across requests' if self.shared_pools else 'private request storage',
             assigned_bytes=sum(m['allocated_bytes'] for m in metrics),
             used_bytes=sum(m['used_bytes'] for m in metrics),

@@ -5,7 +5,7 @@ during generation. Fixed-capacity contiguous, exact-growth dynamic contiguous,
 and block-based caches are implemented and tested with real Qwen decoding on CPU
 and MPS through correctness adapters. A sequential memory-accounting sweep is
 available, along with a shared-budget resident-capacity experiment and a
-single-request timing pilot. The full performance sweep remains planned.
+single-request timing pilot and a round-robin performance sweep.
 
 ## Setup
 
@@ -111,6 +111,11 @@ post-prefill decode throughput:
 python scripts/run_round_robin_check.py --device mps --output results/rr_new.json
 python scripts/summarize_round_robin_check.py results/rr_new.json --output results/rr_new_summary.json
 ```
+
+The [full short-generation sweep](docs/phase9_full_findings.md) uses
+`--full-slice --context 128` (also 256/512/1024/2048) to cover resident counts
+1/2/4/8 and blocks 8/16/32. Its separate aggregator requires all five complete
+context reports before declaring the matrix complete.
 
 Run the shared-budget capacity experiment with cached weights:
 

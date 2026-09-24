@@ -1,4 +1,4 @@
-"""Bounded Phase 9 check: context 512, resident requests 1/2/4, block size 16."""
+"""Phase 9 bounded check or one context slice of the full round-robin sweep."""
 
 import argparse
 from datetime import datetime, timezone
@@ -32,6 +32,10 @@ else:
 
 MODEL = 'Qwen/Qwen2.5-0.5B-Instruct'
 REVISION = '7ae557604adf67be50417f59c2c2f167def9a775'
+SWEEP_CONTEXTS = [128,256,512,1024,2048]
+SWEEP_VARIANTS = [('stock','stock',None),('contiguous','contiguous',None),
+                  ('dynamic','dynamic',None),('block8','block',8),
+                  ('block16','block',16),('block32','block',32)]
 
 
 def check_result(result, references, atol, rtol):
@@ -56,20 +60,30 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--device', choices=['cpu','mps'], default='cpu')
     parser.add_argument('--smoke', action='store_true', help='Context 128, 1/2 requests, four tokens, two repeats')
+    parser.add_argument('--full-slice', action='store_true', help='1/2/4/8 requests, all block sizes, six repeats')
+    parser.add_argument('--context', type=int, choices=SWEEP_CONTEXTS, default=512)
     parser.add_argument('--output', type=Path, required=True)
     args = parser.parse_args()
+    if args.full_slice and args.smoke:
+        parser.error('Choose smoke or full-slice, not both')
+    if not args.full_slice and args.context!=512:
+        parser.error('--context requires --full-slice')
     if args.output.exists():
         parser.error('Output already exists')
     device = select_device(args.device)
     dtype = torch.float16 if device.type=='mps' else torch.float32
     context, counts, tokens, repeats = (128,[1,2],4,2) if args.smoke else (512,[1,2,4],8,4)
+    if args.full_slice:
+        context,counts,tokens,repeats = args.context,[1,2,4,8],8,6
+    variants = SWEEP_VARIANTS if args.full_slice else [(s,s,16 if s=='block' else None) for s in STRATEGIES]
     torch.manual_seed(0)
     sources = [Path(__file__), ROOT/'scripts'/'run_basic_generation.py',
                *sorted((ROOT/'src'/'kv_engine').glob('*.py'))]
-    report = dict(phase='9-round-robin-check', status='running', stage='loading',
+    report = dict(phase='9-full-slice' if args.full_slice else '9-round-robin-check', status='running', stage='loading',
         timestamp_utc=datetime.now(timezone.utc).isoformat(), model=MODEL, revision=REVISION,
         device=str(device), dtype=str(dtype), attention='eager', seed=0, context=context,
-        active_request_counts=counts, strategies=list(STRATEGIES), block_size=16,
+        active_request_counts=counts, strategies=list(STRATEGIES), block_size=None if args.full_slice else 16,
+        variants=[dict(name=n,strategy=s,block_size=b) for n,s,b in variants],
         sequence_capacity=2080, max_new_tokens=tokens, repeats=repeats, warmups=1,
         python=platform.python_version(), torch=torch.__version__, transformers=transformers.__version__,
         platform=platform.platform(), chip=command_output('sysctl','-n','machdep.cpu.brand_string'),
@@ -111,27 +125,29 @@ def main():
                 report['current_active_requests'] = count
                 report['stage'] = 'validation'
                 save()
-                for strategy in STRATEGIES:
+                for variant,strategy,size in variants:
                     for diagnostic in ([False] if strategy=='stock' else [False,True]):
                         result = run_round_robin(model,prompts[:count],strategy,tokens,
-                            diagnostics=diagnostic,collect_logits=True)
+                            block_size=size or 16,diagnostics=diagnostic,collect_logits=True)
+                        result.update(variant=variant,block_size=size)
                         report['validation'].append(check_result(result,references[:count],atol,rtol))
                         save()
                 report['stage'] = 'warmup'
-                for strategy in STRATEGIES:
-                    result = run_round_robin(model,prompts[:count],strategy,tokens)
+                for variant,strategy,size in variants:
+                    result = run_round_robin(model,prompts[:count],strategy,tokens,block_size=size or 16)
+                    result.update(variant=variant,block_size=size)
                     report['warmup_runs'].append(check_result(result,references[:count],atol,rtol))
                     save()
                 report['stage'] = 'measurement'
                 for repeat in range(repeats):
-                    offset = repeat%len(STRATEGIES)
-                    for order_index,strategy in enumerate(STRATEGIES[offset:]+STRATEGIES[:offset]):
+                    offset = repeat%len(variants)
+                    for order_index,(variant,strategy,size) in enumerate(variants[offset:]+variants[:offset]):
                         gc.collect()
-                        result = run_round_robin(model,prompts[:count],strategy,tokens)
-                        result.update(repeat=repeat,order_index=order_index)
+                        result = run_round_robin(model,prompts[:count],strategy,tokens,block_size=size or 16)
+                        result.update(repeat=repeat,order_index=order_index,variant=variant,block_size=size)
                         report['runs'].append(check_result(result,references[:count],atol,rtol))
                         save()
-                    print(f'{device} resident={count} repeat={repeat+1}/{repeats}: all four strategies passed',flush=True)
+                    print(f'{device} context={context} resident={count} repeat={repeat+1}/{repeats}: all {len(variants)} variants passed',flush=True)
             report.update(status='complete',stage='complete')
             report.pop('current_active_requests',None)
         except Exception as error:

@@ -1,0 +1,21 @@
+{
+  "source_sha256": {
+    "results/phase7_mps_float16.json": "40b56c27f59e6020348031e6b217b021a4afc8b22bff2b131af3b5a877302873",
+    "results/phase8_dynamic_mps.json": "23fa2123416f07bfa455b196ee7f00a311f3047538856558dc9756d8d925c20c",
+    "results/phase8_dynamic_mps_repeat.json": "270a17f90a2747a285cc2ed8a06638185ead2d969188f0540d80fbeeea32eed6",
+    "results/phase9_full_mps_128.json": "c6a30cea52921a0622e520cb51b8a2ca7fff343340a913bfaba60cd4cf243992",
+    "results/phase9_full_mps_256.json": "acb152bf537bc3d75f81ef5751cbc3ecbda1bce3caddd54e38ac962afd591b71",
+    "results/phase9_full_mps_512.json": "4bc63a0408fbf021ba7b7468ef13161e0694a9598712d968feb1b7d68db2c35a",
+    "results/phase9_full_mps_1024.json": "b0aa5222df34c5d850f42d0ac7744b64ba673d51194d0ec3b0a7c16a39f3b13a",
+    "results/phase9_full_mps_2048.json": "9d4790f238f7607662887d93a321b4a397c8a160b777bdc37860c884c32eda32"
+  },
+  "analysis_script_sha256": "5ed6ddb5ba27d0710c7b4355b278b74fede76ce77ef4084cd6787e20e70d5346",
+  "matplotlib": "3.10.6",
+  "row_counts": {
+    "memory": 72,
+    "capacity": 20,
+    "timing": 120,
+    "copies": 100
+  },
+  "notes": "No new inference. Phase 7 SDPA accounting, Phase 8 eager capacity, Phase 9 eager timing remain separate. Timing bands are observed ranges, not confidence intervals. No p95 or process-memory claim."
+}

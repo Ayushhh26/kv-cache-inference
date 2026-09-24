@@ -117,6 +117,16 @@ The [full short-generation sweep](docs/phase9_full_findings.md) uses
 1/2/4/8 and blocks 8/16/32. Its separate aggregator requires all five complete
 context reports before declaring the matrix complete.
 
+The [Phase 10 analysis](docs/phase10_analysis.md) brings together the memory,
+capacity, and latency findings with reproducible plots. Blocks improved capacity
+against fixed reservation, but matched dynamic contiguous in the tested capacity
+cases and were slower through the gather-copy adapter. Rebuild the plots without
+inference using the optional `requirements-analysis.txt` dependencies:
+
+```sh
+python scripts/analyze_results.py --output-dir results/phase10_new
+```
+
 Run the shared-budget capacity experiment with cached weights:
 
 ```sh
